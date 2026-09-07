@@ -25,6 +25,18 @@ Es decir, 100% de aciertos, con salidas bien cerca de 0 o de 1 (nada de
 respuestas ambiguas cerca de 0.5), lo cual es una buena señal de que la red no
 solo memorizó las etiquetas sino que encontró una separación clara del problema.
 
+### Grafo computacional
+
+Estas son dos "fotos" del mismo grafo computacional (ejemplo x1=1, x2=0),
+igual que se vería corriendo draw_dot(...) bloque por bloque en Colab: la
+primera justo después del forward (todos los grad en 0.0000, porque todavía
+no se llamó a backward()) y la segunda después de backward(), ya con los
+gradientes calculados en cada nodo.
+
+![Grafo antes de backward](resultados/deber_v1/grafo_xor_forward.png)
+
+![Grafo después de backward](resultados/deber_v1/grafo_xor_backward.png)
+
 ## ¿En qué momento aprendió? (análisis de la curva de pérdida)
 
 Lo interesante de ver la pérdida época a época es que el aprendizaje **no fue
