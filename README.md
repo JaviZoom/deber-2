@@ -64,9 +64,9 @@ progresivo desde el inicio**. Se distinguen tres fases bastante marcadas:
 
 En resumen: el modelo no "deja de aprender" en un punto exacto, sino que pasa de
 no aprender casi nada, a aprender muy rápido, a aprender cada vez más despacio
-pero sin estancarse del todo dentro de las 3000 épocas usadas. La curva completa
-queda guardada en [resultados/deber_v1/loss_xor.png](resultados/deber_v1/loss_xor.png)
-para verla de un vistazo.
+pero sin estancarse del todo dentro de las 3000 épocas usadas.
+
+![Curva de pérdida - versión 1](resultados/deber_v1/loss_xor.png)
 
 ## Versión 2: Usando otros optimizadores 
 
