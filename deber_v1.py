@@ -13,6 +13,7 @@ params = init_params(seed=0)
 
 
 def main():
+    """Forward + backpropagation + gradiente descendente (GD) sobre XOR."""
     # ENTRENAMIENTO
     lr = 0.5
     epochs = 3000

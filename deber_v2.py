@@ -78,6 +78,7 @@ def evaluate(name, params, history):
 
 
 def main():
+    """Entrena XOR con 5 optimizadores distintos y compara sus curvas de pérdida."""
     experiments = [
         ("Batch GD",      GD(lr=0.5),                 len(XS)),  # full-batch, 1 update/epoch
         ("SGD",           GD(lr=0.3),                  1),        # 1 muestra, 4 updates/epoch
