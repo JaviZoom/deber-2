@@ -1,19 +1,3 @@
-"""
-DEBER 2 (versión 2): comparación de optimizadores para entrenar el mismo
-MLP 2-2-1 sobre la compuerta XOR.
-
-En vez de quedarnos solo con el descenso por gradiente "vanilla" (full-batch),
-comparamos 5 variantes, separando dos ideas independientes:
-
-  - Cómo se arma cada actualización (batch_size): Batch GD (todo el dataset),
-    SGD (una muestra a la vez) y Mini-batch GD (de a 2 muestras).
-  - Qué regla de actualización usa el gradiente (optimizer): GD "vanilla",
-    Momentum y Adam.
-
-Todas parten de los mismos pesos iniciales (misma semilla) para que la
-comparación sea justa.
-"""
-
 import os
 import random
 
